@@ -14,12 +14,10 @@ pipeline
 
             }
         }    
-    }
 
-stages{
-    stage("Checkout from SCM"){
-        steps{
-            git branch: 'main',crendtialsId: 'github', url: ''
+        stage("Checkout from SCM"){
+           steps{
+            git branch: 'main',crendtialsId: 'github', url: 'https://github.com/gmarkk/App'
         }
         
     }
